@@ -86,7 +86,7 @@ formData.addEventListener('submit', (e) => {
         valid = false;
     }
 
-    if(true){
+    if(valid){
         let userData={
             username:user,
             password:pass,
@@ -97,9 +97,10 @@ formData.addEventListener('submit', (e) => {
         localStorage.setItem('signUpData',JSON.stringify(userData))
         alert("signed up successfull");
         window.location.href="../HTML/login.html"
+        
     
     }
-   formData.reset();
-
+  
+ formData.reset();
     
 });
